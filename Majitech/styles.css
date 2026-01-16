@@ -1,0 +1,156 @@
+/* RESET GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* evita scroll horizontal */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* FUNDO PRINCIPAL COM IMAGEM */
+.fundo {
+    background-image: url('./img/ChatGPT\ Image\ 15\ de\ jan.\ de\ 2026\,\ 12_24_49.png');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    min-height: 100vh; /* garante ocupação total da tela */
+    width: 100%;
+    position: relative;
+    z-index: -10;
+}
+
+/* FUNDO COM GRADIENTE ANIMADO */
+.background {
+    background: linear-gradient(120deg, #1f2a3a, #00aaff, #0077ff, #1e49be);
+    background-size: 300% 300%;
+    animation: movimento 8s ease infinite;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes movimento {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* IMAGEM */
+.imagem img {
+  position: relative;
+    width: 85%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* BOTÃO CONTATO */
+.btn-contato {
+    position: absolute;        
+    bottom: 40px;              
+    left: 50%;                
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;           
+}
+
+.btn-contato:hover {
+    background-color: #0077ff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* BOTÃO COMPRAR */
+.comprar {
+    position: relative;
+    bottom: 90px; /* usa % para não criar overflow */
+    right: 500px;
+    padding: 14px 36px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comprar:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.icones {
+    position: relative; /* torna os filhos absolutos relativos a este container */
+    height: 50px; /* ou auto */
+}
+
+.instagram, .facebook, .maps {
+    position: absolute;
+    top: 10; /* altura dentro do container */
+    width: 36px;
+    height: 36px;
+}
+
+.instagram {
+    left: 850px;  /* distância da esquerda */
+}
+
+.facebook {
+  align-items: center; /* distância da esquerda, ajusta como quiser */
+}
+
+.maps {
+    left: 960px; /* distância da esquerda */
+}
+
+/* RODAPÉ */
+.rodape-final {
+    background: linear-gradient(120deg, #0d1117, #0077ff, #00aaff);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: none;
+    width: 100%;
+}
+
+.rodape-final h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.rodape-final p {
+    font-size: 16px;
+}
+
+.direitos {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-whatsapp {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

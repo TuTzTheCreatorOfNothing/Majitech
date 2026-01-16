@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* INICIO DO SITE FOTO MAJITECH */
+.fundo {
+    background-image: url('./ChatGPT\ Image\ 15\ de\ jan.\ de\ 2026\,\ 12_24_49.png');
+    background-size: cover;       
+    background-position: center;  
+
+    left: 0;
+    z-index: -10;
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+/* BOTAO CONTATO INICIO DO SITE*/
+.btn-contato {
+  position: absolute;        
+  bottom: 40px;              
+  left: 50%;                
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background-color: #00aaff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 20px;
+  margin-top: 60% ;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;             
+}
+
+.btn-contato:hover {
+  background-color: #0077ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.background {
+  background: linear-gradient(120deg, #1f2a3a, #00aaff, #0077ff, #1e49be);
+  background-size: 300% 300%;
+  animation: movimento 8s ease infinite;
+  min-height: 100vh; /* ocupa uma tela inteira */
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Animação suave do gradiente */
+@keyframes movimento {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Imagem */
+.imagem img {
+  position:relative;
+  width: 85%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Botão COMPRAR */
+.comprar {
+  padding: 14px 36px;
+  margin-top: 600px;
+  margin-right: 1000px;
+  position: absolute;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comprar:hover {
+  background-color: #218838;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* ADAPTADOR PARA CELULAR E TABLET */
+@media (max-width: 768px) {
+  .servicos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-whatsapp {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+.instagram {
+  position: relative;
+  left: 92%;
+  top: 70px; /* sobe o ícone */
+  width: 50px;
+  height: 50px;
+}
+
+.instagram img {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.instagram:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+
+ 
+   .maps {
+  position: relative;     /* ou fixed, se quiser flutuante */
+  left: 92%;
+  top: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.maps img {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.maps:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+
+
+.rodape-final {
+  background: linear-gradient(120deg, #0d1117, #0077ff, #00aaff);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  border-top: none;
+}
+
+.rodape-final h3 {
+  font-size: 28px;
+  margin-bottom: 100px;
+}
+
+.rodape-final  {
+
+  font-size: 16px;
+}
+
+.direitos {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
